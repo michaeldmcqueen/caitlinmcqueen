@@ -1,0 +1,42 @@
+.site-header {
+  display: flex;
+  position: relative;
+  padding: 1.25rem 1rem;
+  background: $primary;
+	@media #{$large} {
+    height: 3.45rem;
+    align-items: center;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+	}
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  a {
+    display: block;
+  }
+}
+
+
+
+.site-navigation  {
+  font-family: $alt-font;
+  ul {
+    a {
+      color: $light;
+    }
+  }  
+}
+
+
+.site-navigation--item {
+  @media #{$medium} {
+    display: inline-block;
+    padding-right: 1.5rem;
+  }
+  a {
+    color: $dark;
+  }
+}

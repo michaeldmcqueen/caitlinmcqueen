@@ -1,0 +1,114 @@
+.intro {
+  padding: 1.5rem;
+  position: relative;
+  .intro--heading {
+    text-align: center;
+    padding: 5rem 0 0;
+  }
+  .intro--text {
+    padding-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    @media #{$large} {
+      width: 70%;
+    }
+  }
+  h1.page-title {
+    font-size:2rem;
+    @include heading;
+    color: $primary;
+    @media #{$medium} {
+      font-size: 2.5rem;
+    }
+    @media #{$xlarge} {
+      font-size: 3rem;
+    }
+  }
+  h2.sub-title {
+    font-size:2rem;
+    color: $white;
+    font-family: $font;
+    font-weight: 300;
+  }
+  p {
+    color: $light;
+  }
+}
+.home.intro {
+  position: relative;
+}
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  padding: 2rem 0 0;
+  img {
+    border-radius: 15px;
+  }
+}
+
+
+// Services Overview
+.shows-grid {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-gap: 2rem;
+  text-align: center;
+  @media #{$medium} {
+    grid-template-columns:  repeat(2, 1fr);
+  }
+  @media #{$large} {
+    grid-template-columns:  repeat(3, 1fr);
+
+  }
+  .shows-grid-item {
+    padding: 1.5rem 1rem;
+    background-color: darken($secondary, 6%);
+    background-image: url(/images/sinewave.svg);
+    background-position: left bottom;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    display: grid;
+    @media #{$medium} {
+      &:nth-child(3n+2) {
+        background-position: 33% bottom;
+      }
+      &:nth-child(4n-7) {
+        grid-column: 1 / 3;
+        background-position: left bottom;
+        background-size: 100%;
+      }
+    }
+    @media #{$large} {
+      &:nth-child(4n-7) {
+        grid-column: 1 / 4;
+        background-position: left bottom;
+        background-size: 100%;
+      }
+    }
+  }
+  .date {
+    color: $tertiary;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: 900;
+  }
+  .venue {
+    color: $light;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    align-self: end;
+
+  }
+  h3 {
+    font-weight: 700;
+    margin: 0;
+  }
+  h4 {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}

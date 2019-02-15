@@ -1,0 +1,31 @@
+.site-footer {
+  background: darken($dark, 10%);
+  color: $white;
+  .site-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0;
+  font-family: $font;
+  @media #{$large} {
+    grid-gap: 2em;
+  }
+  p {
+    margin: 0 0 5px;
+  }
+  h6 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+  .footer-line {
+    align-self: end;
+    .site-by {
+      color: $white;
+      a {
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        color: inherit;
+      }
+    }
+  }
+}

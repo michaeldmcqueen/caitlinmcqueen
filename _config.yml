@@ -1,0 +1,30 @@
+title: Kenosha Security
+url: "https://kenoshasecurity.com"
+baseurl:
+google_analytics_key: 
+google_maps_javascript_api_key:
+
+timezone: Etc/UTC
+permalink: pretty
+
+plugins:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
