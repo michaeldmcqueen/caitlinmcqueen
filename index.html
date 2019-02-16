@@ -5,7 +5,7 @@ description: Caitlin McQueen. Colorado based talent buyer.
 image_path: /images/caitlin.jpg
 resume_link: 
 ---
-
+	<img src="/images/header.svg" alt="Header Sine"/>
 	<div class="container section-padding intro home">
 		<header class="intro--heading ">
 			<h2 class="sub-title">{{ page.subtitle }}</h2>
@@ -17,25 +17,16 @@ resume_link:
 					<p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis odio semper, euismod augue ut, feugiat orci. Proin ut tincidunt magna. Nunc euismod turpis ut dictum blandit. Vestibulum rutrum mi eu porta consectetur. Ut condimentum posuere mauris sed mattis. Proin ac est hendrerit, porta odio ultrices, ullamcorper velit.</p>
 					<p class="editable">Aenean nec pretium ligula. Nunc eu ullamcorper felis. Maecenas ultricies quam pellentesque, feugiat tortor et, tincidunt ante. Donec erat est, molestie ac molestie nec, dapibus vitae ligula. Maecenas quis dictum erat.</p>
 					<a href="{{ page.resume_lnk }}" class="btn primary" title="Download Resume">Download Resume {% include arrow.html %}</a>
-					<a href="/contact">Contact Me</a>
+					<a href="mailto:caitemcqueen@gmail.com" class="contact-me-link">Email Me</a>
 			</div>
 		</section>
 
 	</div>
+	<img src="/images/divider.svg" alt="Divider Sine" class="divider"/>
 
 <section class="shows section-padding">
-	<div class="shows-grid">
-		{% assign shows = site.data.shows | reverse %}
-		{% for show in shows %}
-			<div class="shows-grid-item">
-				{% if show.priority  == "TRUE" %}{{ show.priority }}{% endif %}
-				<div class="date">{{ show.date  | date_to_string }}</div>
-				<h3>{{ show.show }}</h3>
-				{% if show.with %}<h4>with {{ show.with }}</h4>{% endif %}
-				{% if show.venue %}<div class="venue">{{ show.venue }}</div>{% endif %}
-			</div>
-		{% endfor %}
-	</div>
+	<h2>Shows. Shows. Shows.</h2>
+	<div id="shows"></div>
 </section>
 
 

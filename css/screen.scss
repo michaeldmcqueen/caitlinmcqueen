@@ -8,17 +8,23 @@ $secondary: #244460;
 $tertiary: #DABCD3;
 $light: #FAF7EB;
 $dark: #2B2F38;
-$white: #FFF;
-
+$blue: #13B1D3;
 $white: #FFF;
 $red: #FF8B6F;
 
 $html-background-color: $secondary;
 $secondary-brand-color: #FFC461;
+
+@font-face {
+  font-family: 'Porter';
+  src: url('/fonts/porter-sans-inline-block-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+
 $font: 'monotype-grotesque', sans-serif;
 $alt-font: 'monotype-grotesque-extended', sans-serif;
 $heading:  'gastromond', sans-serif;
-
+$subheading: 'Porter', sans-serif;
 @mixin heading {
   font-family: $heading;
   font-weight: 400;
@@ -32,6 +38,7 @@ $mid-point: "(min-width: 620px)";
 $desktop: "(min-width: 768px)";
 $small: "(min-width: 450px)";
 $medium: "(min-width: 620px)";
+$medium-only: "(min-width: 620px) and (max-width: 991px)";
 $medium-down: "(max-width: 620px)";
 $large: "(min-width: 768px)";
 $large-down: "(max-width: 768px)";
