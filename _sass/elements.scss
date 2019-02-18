@@ -120,6 +120,7 @@ h6 {
 
 .sub-title {
 	font-family: $subheading;
+	font-weight: normal;
 }
 p, address, ul, ol, pre {
 	margin: 0 0 20px 0;
@@ -151,7 +152,7 @@ a.btn {
 	@media #{$medium} {
 		padding: 16px 34px 16px 36px;
 		margin-bottom: 0;
-		margin: 0 10px;
+		margin: 0 0px;
 	}
 	&:hover {
 		text-decoration: none;
@@ -202,6 +203,13 @@ a.btn {
 .secondary-bg {
 	background-color: $secondary;
 }
+.tertiary-color {
+	color: $tertiary;
+}
+.tertiary-bg {
+	background-color: $tertiary;
+}
+
 .dark {
 	background-color: $dark;
 }
