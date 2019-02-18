@@ -209,7 +209,7 @@
       &::before {
         content: '';
         position: absolute;
-        background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L5.83927 5.83927L0 8L5.83927 10.1607L8 16L10.1607 10.1607L16 8L10.1607 5.83927L8 0Z" fill="#DABC83"/></svg>');
+        background-image: url('/images/star.svg');
         background-repeat: no-repeat;
         left: 1.5rem;
         top: 1.5rem;
@@ -219,7 +219,7 @@
       &::after {
         content: '';
         position: absolute;
-        background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L5.83927 5.83927L0 8L5.83927 10.1607L8 16L10.1607 10.1607L16 8L10.1607 5.83927L8 0Z" fill="#DABC83"/></svg>');
+        background-image: url('/images/star.svg');
         background-repeat: no-repeat;
         right: 1.5rem;
         top: 1.5rem;
